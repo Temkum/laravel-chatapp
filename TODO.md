@@ -20,4 +20,4 @@ First off is we start to build the scaffold of our app
 -   sign in user
 -   redirect
 
-40min ended
+-   login and logout
