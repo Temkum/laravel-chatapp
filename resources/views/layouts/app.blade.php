@@ -13,16 +13,16 @@
 <body class="bg-gray-300">
   <nav class="p-6 bg-white flex justify-between mb-3">
     <ul class="flex items-center">
-      <li><a href="" class="p-3">Home</a></li>
-      <li><a href="" class="p-3">Dashboard</a></li>
+      <li><a href="/" class="p-3">Home</a></li>
+      <li><a href="dashboard" class="p-3">Dashboard</a></li>
       <li><a href="" class="p-3">Posts</a></li>
     </ul>
 
     <ul class="flex items-center">
       <li><a href="" class="p-3">Jason Tem</a></li>
       <li><a href="" class="p-3">Login</a></li>
-      <li><a href="" class="p-3">Login</a></li>
-      <li><a href="" class="p-3">Register</a></li>
+      <li><a href="" class="p-3">Logout</a></li>
+      <li><a href="{{ route('register') }}" class="p-3">Register</a></li>
     </ul>
   </nav>
 
