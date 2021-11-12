@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::with(['user', 'likes'])->paginate(12); //laravel collection
+        $posts = Post::latest()->with(['user', 'likes'])->paginate(12); //laravel collection
 
         return view('posts', ['posts' => $posts]);
     }
@@ -25,6 +25,15 @@ class PostController extends Controller
         $request->user()->posts()->create([
             'body' => $request->body,
         ]);
+
+        return back();
+    }
+
+    public function destroy(Post $post)
+    {
+        $this->authorize('delete', $post);
+
+        $post->delete();
 
         return back();
     }

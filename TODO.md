@@ -44,3 +44,6 @@ First off is we start to build the scaffold of our app
 > use method spoofing to unlike posts
 
 > User eager loading to map queries into one query or bundle them. Just run `composer require barryvdh/laravel-debugger --dev`
+
+-   Delete posts: ensure user can't delete other's posts
+-   create a laravel policy which will determine who can do what with resources `php artisan make:policy {policyname}`
