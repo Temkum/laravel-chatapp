@@ -42,3 +42,5 @@ First off is we start to build the scaffold of our app
 -   create a controller and modify routes
 
 > use method spoofing to unlike posts
+
+> User eager loading to map queries into one query or bundle them. Just run `composer require barryvdh/laravel-debugger --dev`

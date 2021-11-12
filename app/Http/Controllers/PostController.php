@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(12); //laravel collection
+        $posts = Post::with(['user', 'likes'])->paginate(12); //laravel collection
 
         return view('posts', ['posts' => $posts]);
     }
