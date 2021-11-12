@@ -24,8 +24,19 @@ First off is we start to build the scaffold of our app
 -   apply middleware to the route
 -   remember me feature
 
-- Post feature create controller
-- add view file
-- add post model & migration
+-   Post feature create controller
+-   add view file
+-   add post model & migration
 
-- output posts
+-   output posts
+
+-   factory = run `php artisan tinker`
+-   then `App\Models\model::factory->times(number)->create(['user_id'=>2]);`
+-   modify the factory file you want to generate data
+
+## Like and unlike
+
+-   make like and unlike buttons
+-   make migration table `php artisan make:migration create_likes_table --create=likes` -> modify likes table and migrate
+-   make a model
+-   create a controller and modify routes

@@ -29,6 +29,25 @@
             <a href="" class="font-bold">{{ $post->user->name }}</a>
             <span class="text-gray-600 text-sm">{{ $post->created_at->diffForHumans() }}</span>
             <p class="mb-3">{{ $post->body }}</p>
+
+            {{-- like btns --}}
+            <div class="flex items-center">
+              {{-- prevent user from liking twice --}}
+              @if (!$post->likedBy(auth()->user()))
+                <form action="{{ route('posts.likes', $post->id) }}" method="post" class="mr-2">
+                  @csrf
+                  <button type="submit" class="text-blue-500">Like</button>
+                </form>
+              @else
+                <form action="" method="post" class="mr-1">
+                  @csrf
+                  <button type="submit" class="text-blue-500">Unlike</button>
+                </form>
+              @endif
+
+              {{-- likes section --}}
+              <span>{{ $post->likes->count() }} {{ Str::plural('like', $post->likes->count()) }}</span>
+            </div>
           </div>
         @endforeach
 
