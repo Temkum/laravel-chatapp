@@ -23,3 +23,7 @@ First off is we start to build the scaffold of our app
 -   login and logout
 -   apply middleware to the route
 -   remember me feature
+
+- Post feature create controller
+- add view file
+- add post model & migration
