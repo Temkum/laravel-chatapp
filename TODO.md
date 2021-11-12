@@ -27,3 +27,5 @@ First off is we start to build the scaffold of our app
 - Post feature create controller
 - add view file
 - add post model & migration
+
+- output posts
