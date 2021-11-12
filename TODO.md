@@ -21,3 +21,5 @@ First off is we start to build the scaffold of our app
 -   redirect
 
 -   login and logout
+-   apply middleware to the route
+-   remember me feature
