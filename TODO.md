@@ -47,3 +47,8 @@ First off is we start to build the scaffold of our app
 
 -   Delete posts: ensure user can't delete other's posts
 -   create a laravel policy which will determine who can do what with resources `php artisan make:policy {policyname}`
+
+-   Make user post controller
+-   use blade component to avoid duplicate code
+-   view user's page - with posts
+-   set number of likes
