@@ -14,6 +14,13 @@ class PostController extends Controller
         return view('posts', ['posts' => $posts]);
     }
 
+    public function show(Post $post)
+    {
+        return view('post.show', [
+            'post' => $post
+        ]);
+    }
+
     public function store(Request $request)
     {
         # validate input

@@ -52,3 +52,6 @@ First off is we start to build the scaffold of our app
 -   use blade component to avoid duplicate code
 -   view user's page - with posts
 -   set number of likes
+
+- To send mails use `mailtrap.io` -> register and use credentials on .env file
+- create a markdown template using `php artisan make:mail PostLiked --markdown=emails.posts.post_liked`
