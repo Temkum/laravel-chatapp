@@ -55,3 +55,6 @@ First off is we start to build the scaffold of our app
 
 - To send mails use `mailtrap.io` -> register and use credentials on .env file
 - create a markdown template using `php artisan make:mail PostLiked --markdown=emails.posts.post_liked`
+
+- Prevent spamming emails when users likes and unlikes posts
+- create migration `php artisan make:migration add_soft_delete_to_likes_table --table=likes`
